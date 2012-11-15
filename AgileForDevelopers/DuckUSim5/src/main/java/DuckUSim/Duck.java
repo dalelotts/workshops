@@ -66,11 +66,11 @@ abstract class Duck {
 		return quackBehavior.quack();
 	}
 
-	public void setFlightBehavior(FlightBehavior flightBehavior) {
+	public void setFlightBehavior(final FlightBehavior flightBehavior) {
 		this.flightBehavior = flightBehavior;
 	}
 
-	public void setQuackBehavior(QuackBehavior quackBehavior) {
+	public void setQuackBehavior(final QuackBehavior quackBehavior) {
 		this.quackBehavior = quackBehavior;
 	}
 

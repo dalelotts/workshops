@@ -88,8 +88,8 @@ public class DuckTest {
 		try {
 			new MockDuck(null, quackBehavior);
 			Assert.fail("Expected IllegalArgumentException");
-		} catch (IllegalArgumentException ignore) {
-			Assert.assertThat(ignore.getMessage(), containsString("Null:flightBehavior"));
+		} catch (IllegalArgumentException ex) {
+			Assert.assertThat(ex.getMessage(), containsString("Null:flightBehavior"));
 		}
 	}
 
@@ -100,8 +100,8 @@ public class DuckTest {
 		try {
 			new MockDuck(flightBehavior, null);
 			Assert.fail("Expected IllegalArgumentException");
-		} catch (IllegalArgumentException ignore) {
-			Assert.assertThat(ignore.getMessage(), containsString("Null:quackBehavior"));
+		} catch (IllegalArgumentException ex) {
+			Assert.assertThat(ex.getMessage(), containsString("Null:quackBehavior"));
 		}
 	}
 
