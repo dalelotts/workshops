@@ -21,7 +21,7 @@ public final class RubberDuckTest {
 
 	@Test
 
-	public void testDisplay() {
+	public void display() {
 		final Duck duck = new RubberDuck();
 		Assert.assertThat(duck.display(), containsString("I'm Displaying RubberDuck"));
 	}
@@ -29,7 +29,7 @@ public final class RubberDuckTest {
 
 	@Test
 
-	public void testFly() {
+	public void fly() {
 		final Duck duck = new RubberDuck();
 		Assert.assertThat(duck.fly(), containsString("I can't fly"));
 	}
@@ -37,7 +37,7 @@ public final class RubberDuckTest {
 
 	@Test
 
-	public void testQuack() {
+	public void quack() {
 		final Duck duck = new RubberDuck();
 		Assert.assertThat(duck.quack(), containsString("I'm Squeaking"));
 	}
@@ -45,7 +45,7 @@ public final class RubberDuckTest {
 
 	@Test
 
-	public void testSwim() {
+	public void swim() {
 		final Duck duck = new RubberDuck();
 		Assert.assertThat(duck.swim(), containsString("I'm Swimming"));
 	}

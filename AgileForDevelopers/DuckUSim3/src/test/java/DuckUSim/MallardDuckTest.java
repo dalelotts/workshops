@@ -21,7 +21,7 @@ public final class MallardDuckTest {
 
 	@Test
 
-	public void testDisplay() {
+	public void display() {
 		final Duck duck = new MallardDuck();
 		Assert.assertThat(duck.display(), containsString("I'm Displaying MallardDuck"));
 	}
@@ -29,7 +29,7 @@ public final class MallardDuckTest {
 
 	@Test
 
-	public void testFly() {
+	public void fly() {
 		final Duck duck = new MallardDuck();
 		Assert.assertThat(duck.fly(), containsString("I'm Flying with wings"));
 	}
@@ -37,7 +37,7 @@ public final class MallardDuckTest {
 
 	@Test
 
-	public void testQuack() {
+	public void quack() {
 		final Duck duck = new MallardDuck();
 		Assert.assertThat(duck.quack(), containsString("I'm Quacking"));
 	}
@@ -45,7 +45,7 @@ public final class MallardDuckTest {
 
 	@Test
 
-	public void testSwim() {
+	public void swim() {
 		final Duck duck = new MallardDuck();
 		Assert.assertThat(duck.swim(), containsString("I'm Swimming"));
 	}

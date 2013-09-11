@@ -4,9 +4,9 @@
 */
 package DuckUSim;
 
-import ch.qos.logback.classic.Logger;
 import org.junit.Assert;
 import org.junit.Test;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static org.junit.internal.matchers.StringContains.containsString;
@@ -17,7 +17,7 @@ import static org.junit.internal.matchers.StringContains.containsString;
  */
 public class DuckTest {
 
-	private static final Logger LOG = (Logger) LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME);
+	private static final Logger LOG = LoggerFactory.getLogger(DuckTest.class);
 
 	@Test
 
